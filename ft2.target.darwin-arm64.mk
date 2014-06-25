@@ -95,6 +95,7 @@ MY_DEFS_Debug := \
 	'-DSYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE' \
 	'-DENABLE_EGLIMAGE=1' \
 	'-DCLD_VERSION=1' \
+	'-DCLD_DATA_FROM_STATIC' \
 	'-DENABLE_PRINTING=1' \
 	'-DENABLE_MANAGED_USERS=1' \
 	'-DDATA_REDUCTION_FALLBACK_HOST="http://compress.googlezip.net:80/"' \
@@ -138,6 +139,9 @@ LOCAL_CPPFLAGS_Debug := \
 	-fno-threadsafe-statics \
 	-fvisibility-inlines-hidden \
 	-Wno-deprecated \
+	-std=gnu++11 \
+	-Wno-narrowing \
+	-Wno-literal-suffix \
 	-Wno-non-virtual-dtor \
 	-Wno-sign-promo \
 	-Wno-non-virtual-dtor
@@ -193,6 +197,7 @@ MY_DEFS_Release := \
 	'-DSYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE' \
 	'-DENABLE_EGLIMAGE=1' \
 	'-DCLD_VERSION=1' \
+	'-DCLD_DATA_FROM_STATIC' \
 	'-DENABLE_PRINTING=1' \
 	'-DENABLE_MANAGED_USERS=1' \
 	'-DDATA_REDUCTION_FALLBACK_HOST="http://compress.googlezip.net:80/"' \
@@ -236,6 +241,9 @@ LOCAL_CPPFLAGS_Release := \
 	-fno-threadsafe-statics \
 	-fvisibility-inlines-hidden \
 	-Wno-deprecated \
+	-std=gnu++11 \
+	-Wno-narrowing \
+	-Wno-literal-suffix \
 	-Wno-non-virtual-dtor \
 	-Wno-sign-promo \
 	-Wno-non-virtual-dtor
