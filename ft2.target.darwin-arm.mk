@@ -113,6 +113,7 @@ MY_DEFS_Debug := \
 	'-DDATA_REDUCTION_PROXY_PROBE_URL="http://check.googlezip.net/connect"' \
 	'-DDATA_REDUCTION_PROXY_WARMUP_URL="http://www.gstatic.com/generate_204"' \
 	'-DVIDEO_HOLE=1' \
+	'-DENABLE_LOAD_COMPLETION_HACKS=1' \
 	'-DFT2_BUILD_LIBRARY' \
 	'-DDARWIN_NO_CARBON' \
 	'-DCHROME_PNG_WRITE_SUPPORT' \
@@ -225,6 +226,7 @@ MY_DEFS_Release := \
 	'-DDATA_REDUCTION_PROXY_PROBE_URL="http://check.googlezip.net/connect"' \
 	'-DDATA_REDUCTION_PROXY_WARMUP_URL="http://www.gstatic.com/generate_204"' \
 	'-DVIDEO_HOLE=1' \
+	'-DENABLE_LOAD_COMPLETION_HACKS=1' \
 	'-DFT2_BUILD_LIBRARY' \
 	'-DDARWIN_NO_CARBON' \
 	'-DCHROME_PNG_WRITE_SUPPORT' \
